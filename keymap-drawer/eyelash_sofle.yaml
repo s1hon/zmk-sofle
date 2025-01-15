@@ -25,7 +25,7 @@ layers:
   - I
   - O
   - P
-  - {t: '`', s: '~'}
+  - {t: '=', s: +}
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -77,7 +77,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
