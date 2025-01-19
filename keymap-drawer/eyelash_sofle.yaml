@@ -1,6 +1,6 @@
 layers:
   0:hoho:
-  - {t: '`', s: '~'}
+  - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -65,7 +65,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   1:arrow:
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
