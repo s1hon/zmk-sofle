@@ -58,8 +58,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - 1:arrow
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
