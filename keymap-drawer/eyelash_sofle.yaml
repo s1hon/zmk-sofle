@@ -55,11 +55,11 @@ layers:
   - PLAY PAUSE
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-space$$
   - 1:arrow
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
