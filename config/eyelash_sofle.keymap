@@ -49,7 +49,7 @@
     suESC: suESC {
         compatible = "zmk,behavior-mod-morph";
         label = "suESC";
-        bindings = <&kp ESC>, <&mo MOD_LGUI &kp GRAVE>;
+        bindings = <&kp ESC>, <&kp LEFT_GUI(GRAVE)>;
         #binding-cells = <0>;
         mods = <(MOD_LGUI)>;
     };
