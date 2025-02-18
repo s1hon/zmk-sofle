@@ -1,6 +1,6 @@
 layers:
   0:hoho:
-  - {t: '$$mdi:keyboard-esc$$', s: LEFT GUI(GRAVE)}
+  - {t: '$$mdi:keyboard-esc$$', s: Gui+`}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
