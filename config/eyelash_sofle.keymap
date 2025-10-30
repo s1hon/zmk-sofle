@@ -38,13 +38,6 @@
     };
 
     behaviors {
-        suESC: suESC {
-            compatible = "zmk,behavior-mod-morph";
-            label = "suESC";
-            bindings = <&kp ESC>, <&kp LG(GRAVE)>;
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
     };
 
     combos {
@@ -54,6 +47,14 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+    };
+
+    suESC: suESC {
+        compatible = "zmk,behavior-mod-morph";
+        label = "suESC";
+        bindings = <&kp ESC>, <&kp LG(GRAVE)>;
+        #binding-cells = <0>;
+        mods = <(MOD_LGUI)>;
     };
 
     keymap {
