@@ -6,12 +6,19 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    # support nice_oled and nice_epaper
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
   projects:
-   # - name: mario-peripheral-animation
-   #   remote: gpeye
-   #    revision: main 
+    # - name: mario-peripheral-animation
+    #   remote: gpeye
+    #    revision: main
+    # support nice_oled and nice_epaper
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
