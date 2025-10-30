@@ -5,11 +5,10 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -27,22 +26,34 @@
     trigger-period-ms = <16>;
 };
 
+&soft_off { hold-time-ms = <2000>; };
 
 / {
-
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <100>;
     };
 
-    suESC: suESC {
-        compatible = "zmk,behavior-mod-morph";
-        label = "suESC";
-        bindings = <&kp ESC>, <&kp LG(GRAVE)>;
-        #binding-cells = <0>;
-        mods = <(MOD_LGUI)>;
+    behaviors {
+        suESC: suESC {
+            compatible = "zmk,behavior-mod-morph";
+            label = "suESC";
+            bindings = <&kp ESC>, <&kp LG(GRAVE)>;
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <14 28 40>;
+        };
     };
 
     keymap {
