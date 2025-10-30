@@ -195,3 +195,6 @@ layers:
   - HOME
   - PG DN
   - END
+combos:
+- p: [14, 28, 40]
+  k: '&soft_off'
